@@ -23,7 +23,7 @@ public class ContaEmpresa extends Conta {
 
 	public void emprestimo(Double valor) {
 		if (valor <= limiteEmprestimo) {
-			depositar(valor);
+			saldo += valor -10.0;
 		}
 	}
 }
