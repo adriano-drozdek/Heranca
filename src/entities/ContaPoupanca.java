@@ -21,4 +21,8 @@ public class ContaPoupanca extends Conta {
 		this.taxaJuro = taxaJuro;
 	}
 
+	public void atualizarSaldo() {
+		saldo += saldo + taxaJuro;
+	}
+
 }
