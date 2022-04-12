@@ -37,4 +37,12 @@ public class Conta {
 		return saldo;
 	}
 
+	public void sacar(Double valor) {
+		saldo -= valor;
+	}
+
+	public void depositar(Double valor) {
+		saldo += valor;
+	}
+
 }
