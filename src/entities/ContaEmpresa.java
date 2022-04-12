@@ -21,4 +21,9 @@ public class ContaEmpresa extends Conta {
 		this.limiteEmprestimo = limiteEmprestimo;
 	}
 
+	public void emprestimo(Double valor) {
+		if (valor <= limiteEmprestimo) {
+			depositar(valor);
+		}
+	}
 }
