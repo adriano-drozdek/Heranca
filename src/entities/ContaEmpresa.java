@@ -17,11 +17,11 @@ public class ContaEmpresa extends Conta {
 		return limiteEmprestimo;
 	}
 
-	public void setLimiteEmprestimo(Double limiteEmprestimo) {
+	public void setLimiteEmprestimo(double limiteEmprestimo) {
 		this.limiteEmprestimo = limiteEmprestimo;
 	}
 
-	public void emprestimo(Double valor) {
+	public void emprestimo(double valor) {
 		if (valor <= limiteEmprestimo) {
 			saldo += valor -10.0;
 		}

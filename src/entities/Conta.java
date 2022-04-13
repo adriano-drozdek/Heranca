@@ -37,11 +37,11 @@ public class Conta {
 		return saldo;
 	}
 
-	public void sacar(Double valor) {
+	public void sacar(double valor) {
 		saldo -= valor + 5;
 	}
 
-	public void depositar(Double valor) {
+	public void depositar(double valor) {
 		saldo += valor;
 	}
 
