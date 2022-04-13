@@ -23,7 +23,13 @@ public class ContaEmpresa extends Conta {
 
 	public void emprestimo(double valor) {
 		if (valor <= limiteEmprestimo) {
-			saldo += valor -10.0;
+			saldo += valor - 10.0;
 		}
+	}
+
+	@Override
+	public void sacar(double valor) {
+		super.sacar(valor);
+		saldo -= 2.0;
 	}
 }
