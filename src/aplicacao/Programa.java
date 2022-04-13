@@ -1,6 +1,7 @@
 package aplicacao;
 
 import entities.Conta;
+import entities.ContaPoupanca;
 
 public class Programa {
 
@@ -9,6 +10,10 @@ public class Programa {
 		Conta conta1 = new Conta(1001, "Maria", 1000.0);
 		conta1.sacar(200.0);
 		System.out.println(conta1.getSaldo());
+		
+		Conta conta2 = new ContaPoupanca(1002, "João", 1000.0, 0.01);
+		conta2.sacar(200.0);
+		System.out.println(conta2.getSaldo());
 	}
 
 }
